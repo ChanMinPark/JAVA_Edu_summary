@@ -99,3 +99,92 @@
 
 
 
+	1. 실습 코드
+		1. IfApplication
+
+```
+public class IfApplication {
+
+      //main프로그램 실행 진입점(Entry point)
+
+      public static void main(String[] args) {
+
+             //args는 프로그램을 실핼 할 때 입력하는 명령행 인자를 저장
+
+             //Command Line Arguments
+
+            
+
+             //args에서 하나씩 arg에 담아서 for문 수행
+
+             for(String arg : args) {
+
+                  System. out.println( arg);
+
+            }
+
+            
+
+             //점수를 입력받아 60점 이상이면 합격
+
+             //그렇지 않으면 불합격을 출력하세요.
+
+             if( args. length != 1) {
+
+                  System. out.println( "사용 예 : java IfApplication 70" );
+
+                  System. exit(0);
+
+            }
+
+            String data = args[0];
+
+             int jumsu = Integer. parseInt(data);
+
+             if( jumsu>=60) {
+
+                  System. out.println( "합격");
+
+            } else {
+
+                  System. out.println( "불합격");
+
+            }
+
+      }
+
+}
+```
+		2. ScannerApplication
+```
+
+import java.util.Scanner;
+
+
+public class ScannerApplication {
+
+      public static void main(String[] args) {
+
+            Scanner scan = new Scanner(System. in);
+
+            System. out.print( "점수를 입력하세요. : " );
+
+             int jumsu = scan.nextInt();
+
+             if( jumsu >= 60) {
+
+                  System. out.println( "합격");
+
+            } else {
+
+                  System. out.println( "불합격");
+
+            }
+
+      }
+
+}
+
+```
+
+
