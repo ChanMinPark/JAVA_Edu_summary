@@ -85,3 +85,17 @@
 		  레이블을 이용한 흐름제어가 가능하다.
 
 
+
+	4. Tip
+		1. args이용하기
+			1. 이클립스에서도 실행시 args에 인자를 주고 싶을때
+				1. Run-Run Configuration
+				2. 왼쪽에서 'Java Application'에서 실행할 항목 선택.
+				3. 오른쪽 상단 'Arguments'탭
+				4. 'Program arguments'에서 옆에 'Variable'선택
+				5. 'string_prompt' 선택
+
+			2. 이렇게 하면 이클립스에서 실행해도 입력을 받고 실행한다.
+
+
+
