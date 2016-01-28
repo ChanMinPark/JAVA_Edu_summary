@@ -5,3 +5,7 @@
 #####1. 2016-01-27(수요일) - 제어문  
 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/1_20160127.md  
 연습문제 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/1_20160127_Exercise.md  
+
+#####2. 2016-01-28(목요일) - 클래스  
+링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/2_20160128.md  
+연습문제 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/2_20160128_Exercise.md  
