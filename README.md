@@ -9,3 +9,8 @@
 #####2. 2016-01-28(목요일) - 클래스  
 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/2_20160128.md  
 연습문제 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/2_20160128_Exercise.md  
+
+#####3. 2016-01-29(금요일) - 제한자 / 다형성  
+링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/3_20160129.md  
+연습문제 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/3_20160129_Exercise.md  
+연습문제2 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/3_20160129_Exercise2.md  
