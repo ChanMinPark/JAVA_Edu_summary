@@ -18,3 +18,6 @@
 #####4. 2016-02-01(월요일) - Interface 인터페이스 / 내부클래스 / 예외  
 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/4_20160201.md  
 연습문제 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/4_20160201_Exercise.md  
+
+#####5. 2016-02-03(수요일) - 예외 Tip / equals Tip / etc Tip  
+링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/5_20160203.md  
