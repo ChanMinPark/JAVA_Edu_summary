@@ -22,5 +22,8 @@
 #####5. 2016-02-03(수요일) - 예외 Tip / equals Tip / etc Tip  
 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/5_20160203.md  
 
-#####6. 2016-02-03(목요일) - Thread 쓰레드 / Generic 제네릭 / Collection framework  
+#####6. 2016-02-04(목요일) - Thread 쓰레드 / Generic 제네릭 / Collection framework  
 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/6_20160204.md  
+
+#####7. 2016-02-05(금요일) - I/O 입출력  
+링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/7_20160205.md  
