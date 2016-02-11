@@ -28,5 +28,6 @@
 #####7. 2016-02-05(금요일) - I/O 입출력  
 링크 : https://github.com/ChanMinPark/JAVA_Edu_summary/blob/master/7_20160205.md  
 
-#####8. 2016-02-11(목요일) -   
-링크 : 
+#####8. 2016-02-11(목요일) - 객체 직렬화(Java) / DMBS(SQL)  
+링크(객체 직렬화) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/8_20160211_1.md  
+링크(DBMS) : 
