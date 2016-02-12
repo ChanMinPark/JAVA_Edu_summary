@@ -1,5 +1,5 @@
-# JAVA_Edu_summary  
-본 저장소에는 JAVA교육을 받으면서 배우는 내용을 정리하여 업로드 한다.  
+# JAVA_SQL_Edu_summary  
+본 저장소에는 JAVA와 SQL교육을 받으면서 배우는 내용을 정리하여 업로드 한다.  
 
 # 목차  
 #####1. 2016-01-27(수요일) - 제어문  
@@ -31,3 +31,7 @@
 #####8. 2016-02-11(목요일) - 객체 직렬화(Java) / DMBS(SQL)  
 링크(객체 직렬화) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/8_20160211_1.md  
 링크(DBMS) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/8_20160211_2.md  
+
+#####8. 2016-02-12(금요일) - SQL  
+링크(내용) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/9_20160212.md  
+링크(소스) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/9_20160212_sql.md  
