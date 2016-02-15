@@ -1,6 +1,3 @@
-##실습 SQL 코드  
-
-```sql
 /*
 insert예시1.
 insert into 테이블 (열이름, ...)
@@ -256,4 +253,3 @@ select first_name, to_char(hire_date, 'YYYY-MM-DD') as hire_date,
     ELSE '모름'
   end as 입사시기
   from employees;
-```
