@@ -1,6 +1,3 @@
-##실습 SQL 코드  
-
-```sql
 select * from employees;
 
 /*이름이 David인 사원의 정보를 조회하세요.*/
@@ -124,4 +121,3 @@ select replace(phone_number, '.', '-') as phone_number from employees;
 20번 부서에 근무하면서 매니저 아이디가 100인 사원의 정보를 출력하세요.*/
 select * from employees
 where (department_id=80 and lower(job_id) = 'sa_man') or (department_id=20 and manager_id=100);
-```
