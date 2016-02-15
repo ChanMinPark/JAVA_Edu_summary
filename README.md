@@ -34,7 +34,7 @@
 
 #####9. 2016-02-12(금요일) - SQL(DML, 구성요소, Sequence)  
 링크(내용) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/9_20160212.md  
-링크(소스) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/9_20160212_sql.md  
+링크(소스) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/9_20160212_sql.sql  
 
 #####10. 2016-02-15(월요일) - 실습으로 진행  
-링크(소스) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/10_20160215_sql.md  
+링크(소스) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/10_20160215_sql.sql  
