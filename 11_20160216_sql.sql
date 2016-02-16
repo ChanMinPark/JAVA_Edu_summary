@@ -247,3 +247,60 @@ desc employees;
 desc jobs;
 select * from jobs;
 desc locations;
+
+--다음중 오류가 있는 라인은?
+select employee_id,
+e.first_name,/*employees.first_name,*//*table 별칭을 쓰면 table 전체 이름을 쓸 수 없다.*/
+e.department_id,
+d.department_id
+from employees e, departments d
+where e.department_id = d.department_id
+;
+
+
+/*Sub Query*/
+--Nancy의 급여보다 많은 급여를 받는 사원의 이름과 급여를 출력하세요.
+select salary from employees where first_name='Nancy'; --12008
+select first_name, salary from employees where salary > 12008; --6개 출력
+
+--서브쿼리 이용
+select first_name, salary
+from employees
+where salary > (select salary from employees where first_name='Nancy');
+
+--David는 3명이라서 Nancy와 같이 일반적인 형식으로는 안되고 다중 행 서브쿼리로 처리해야 한다.
+--다중 행 서브쿼리는 연산자를 통해서 처리한다.(IN, ANY, SOME, ALL, EXIST)
+select first_name, salary
+from employees
+where salary > ALL(select salary from employees where first_name='David');
+
+--평균급여 이상 받는 사원의 이름과 급여를 출력하세요.
+select first_name, salary
+from employees
+where salary >= (select avg(salary) from employees);
+
+/*IN연산자에서 Null을 주의해야한다.*/
+--IN연산자에서는 NULL을 사용하지 마라.
+select manager_id from employees where department_id=90;
+--null포함 3개 출력. null이 존재한다.
+
+select * from employees where manager_id=100 or manager_id is null;
+-- 15개 출력
+
+select * from employees where manager_id in(select manager_id from employees where department_id=90);
+-- 14개 출력. null이 배제 된 것이다.
+
+--상호연관 Sub Query
+--메인쿼리 테이블이 서브쿼리에서 사용됨.
+--테이블 별칭을 이용한다.
+select first_name, salary
+from employees a
+where salary > (select avg(salary) from employees b where b.department_id=a.department_id);
+
+
+--select절에 서브쿼리가 들어가는 것을 scalar sub query라고 한다.
+--스칼라 서브쿼리는 join을 대체 할 수 있다.
+select first_name, (select department_name
+                    from departments d
+                    where d.department_id = e.department_id) department_name
+from employees e;
