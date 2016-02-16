@@ -215,16 +215,35 @@ where e.department_id = d.department_id(+) and d.location_id = l.location_id
 
 select e.first_name, d.department_name, l.city
 from employees e
-join departments d on e.department_id = d.department_id(+)
+join departments d on e.department_id = d.department_id
 join locations l on d.location_id = l.location_id
 where e.first_name='John';
 
 /*사번이 103인 사원의 사원번호, 이름, 급여, 매니저이름, 부서이름을 출력하세요.*/
 select e.employee_id, e.first_name, e.salary, m.first_name as manager_name, d.department_name
 from employees e, employees m, departments d
-where e.manager_id=m.employee_id and e.department_id = d.department_id and e.employee_id = 103;
+where e.manager_id=m.employee_id and m.department_id = d.department_id and e.employee_id = 103;
 
 /*모든 사원들의 사번, 이름, 급여, 매니저이름, 매니저급여, 부서이름을 출력하세요.*/
 select e.employee_id, e.first_name, e.salary, m.first_name as manager_name, m.salary as manager_salary, d.department_name
 from employees e, employees m, departments d
 where e.manager_id=m.employee_id(+) and e.department_id = d.department_id(+);
+
+select e.employee_id, e.first_name, e.salary, m.first_name as manager_name, m.salary as manager_salary, d.department_name
+from employees e
+left join employees m on e.manager_id=m.employee_id(+)
+left join departments d on e.department_id = d.department_id;
+
+/*사원번호가 103인 사원의 부서위치(city)와 매니저의 직무이름을 출력하세요.*/
+select l.city, j.job_title as manager_job
+from employees e
+join employees m on e.manager_id=m.employee_id
+join jobs j on m.job_id=j.job_id
+join departments d on e.department_id=d.department_id
+join locations l on d.location_id=l.location_id
+where e.employee_id=103;
+
+desc employees;
+desc jobs;
+select * from jobs;
+desc locations;
