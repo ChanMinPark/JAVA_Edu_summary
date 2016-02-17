@@ -44,5 +44,5 @@
 링크(소스) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/11_20160216_sql.sql  
 
 #####12. 2016-02-17(수요일) - 서브 쿼리  
-링크(내용) :    
+링크(내용) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/12_20160217.md  
 링크(소스) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/12_20160217_sql.sql  
