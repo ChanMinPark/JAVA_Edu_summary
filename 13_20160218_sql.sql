@@ -358,3 +358,62 @@ as
 
 select * from v_emp10;
 desc v_emp10;
+
+--복합 뷰
+--뷰 생성 select 쿼리에 조인을 사용한 뷰
+create or replace view v_emp_dept
+as
+  select e.employee_id, e.first_name, e.job_id, e.manager_id, e.hire_date, e.salary,
+        d.department_name, d.location_id
+  from employees e join departments d on e.department_id = d.department_id; --복합 뷰
+--복잡한 쿼리를 단순하게 작성할 수 있다.
+select first_name, department_name from v_emp_dept;
+
+--인라인 뷰
+--from 절에 서브쿼리가 사용된 것, 1회용
+--부서별 급여의 평균이 2500이상인 부서의 번호와 급여 평균을 출력하세요.
+select department_id, avg(salary)
+from employees
+group by department_id
+having avg(salary) >= 2500;
+--위의 것을 서브쿼리(인라인뷰)로 변환
+select department_id, avgsal
+from (select department_id, avg(salary) as avgsal
+      from employees
+      group by department_id)
+where avgsal >= 2500;
+
+
+/*SEQUENCE*/
+--create sequence 시퀀스이름
+--[increment by n]           --증가 값, 기본값 1
+--[start with n]             --시퀀스 시작번호, 기본값 1
+--[maxvalue n | nomaxvalue]  --생성 가능한 시퀀스 최대값
+--[minvalue n | nominvalue]  --최소값
+--[cycle | nocycle]          --시퀀스 순환 여부
+--[cache n | nocach]         --캐시 개수	
+
+--부서번호를 저장하기 위한 시퀀스를 생성하세요.
+--부서번호는 10부터 10씩 증가 최대 90까지 증가하며, 순환하지 않도록한다.
+--그리고 캐시는 2개만
+create sequence seq_deptno
+increment by 10
+start with 10
+maxvalue 90
+cache 2;
+
+select * from dept;
+create table dept2 as select * from dept where 1=2; --구조만 갖는 테이블 생성
+
+
+/*SYNONYM*/
+--employees를 emps로 사용하고 싶을 때에는
+--시노늄 생성
+--CREATE [PUBLIC] SYNONYM 동의어이름
+--FOR [스키마.]대상객체
+select * from hr.employees; --스키마는? 객체들의 모음 = 계정과 동일
+
+create synonym emps for employees;
+select * from emps;
+
+drop synonym emps;
