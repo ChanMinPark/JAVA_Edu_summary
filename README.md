@@ -46,3 +46,7 @@
 #####12. 2016-02-17(수요일) - 서브 쿼리  
 링크(내용) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/12_20160217.md  
 링크(소스) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/12_20160217_sql.sql  
+
+#####13. 2016-02-18(목요일) - DML, 객체와 CREATE TABLE, 제약조건, 오라클 객체  
+링크(내용) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/13_20160218.md  
+링크(소스) : https://github.com/ChanMinPark/JAVA_SQL_Edu_summary/blob/master/13_20160218_sql.sql  
